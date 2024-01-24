@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Outfit&family=Ubuntu&family=Young+Serif&display=swap');
+
 body {
     background-color: pink;
+    font-family: 'Outfit', sans-serif;
 }
 
 .attribution { 
@@ -24,8 +27,13 @@ body {
     border-radius: 25px;
 }
 
-h2 {
+h1 {
+    font-family: 'Young Serif', serif;
+}
+
+.similar-styling {
     color: hsl(332, 51%, 32%);
+    font-family: 'Young Serif', serif;
 }
 
 p {
@@ -34,4 +42,29 @@ p {
 
 span {
     font-weight: bold;
+}
+
+li::marker {
+    color: hsl(332, 51%, 32%);
+}
+
+.preparation {
+    background-color: pink;
+    padding: 20px;
+    border-radius: 25px;
+    line-height: 1.4;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+td {
+    border: none;
+    border-bottom: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
 }
