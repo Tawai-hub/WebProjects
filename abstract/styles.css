@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    background-color: black;
+    padding: 5px;
+    height: 4rem;
+}
+
+.right-side {
+    display: flex;
+    margin: auto 3rem auto 1rem;
+}
+
+.left-side {
+    display: flex;
+}
+
+.left-side p, .right-side button {
+    margin: 0 10px;
+}
+
+.request-btn {
+    width: auto;
+    border-radius: 8px;
+    color: white;
+    background-color: black;
+    border-color: #fff;
+    padding: 5px 15px;
+}
+
+.signin-btn {
+    background-color: blue;
+    padding: 5px 15px;
+    border-radius: 8px;
+    color: white;
+}
