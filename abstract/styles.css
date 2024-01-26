@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 nav {
@@ -8,8 +9,9 @@ nav {
     align-items: center;
     color: #fff;
     background-color: black;
-    padding: 5px;
+    padding: 15px;
     height: 4rem;
+    font-size: x-large;
 }
 
 .right-side {
@@ -19,24 +21,52 @@ nav {
 
 .left-side {
     display: flex;
+    margin-left: 3rem;
 }
 
 .left-side p, .right-side button {
     margin: 0 10px;
+    font-size: 1.5rem
 }
 
 .request-btn {
+    cursor: pointer;
     width: auto;
     border-radius: 8px;
     color: white;
     background-color: black;
     border-color: #fff;
-    padding: 5px 15px;
+    padding: 15px 25px;
+    border-width: 1px;
 }
 
 .signin-btn {
-    background-color: blue;
-    padding: 5px 15px;
+    cursor: pointer;
+    background-color: #4C5FD5;
+    padding: 5px 20px;
     border-radius: 8px;
     color: white;
+    border: none;
+}
+
+.signin-btn:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.first-section {
+    text-align: center;
+    background-color: #dadbf1;
+    padding: 7rem 10rem;
+    font-size: 2.8rem;
+    height: auto;
+}
+
+.search-box {
+    width: 50rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    border-radius: 12px;
+    margin-top: 18px;
 }
