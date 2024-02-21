@@ -1,5 +1,3 @@
-//jshint esversion:6
-
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
@@ -14,15 +12,32 @@ app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
+let posts = [];
 
+app.get("/", (req,res) => {
+  res.render("home", {startingContent: homeStartingContent, pageHeading: "Home", posts: posts});
+});
 
+app.get("/about", (req,res) => {
+  res.render("about", {startingContent: aboutContent, pageHeading: "About"});
+});
 
+app.get("/contact", (req,res) => {
+  res.render("contact", {startingContent: contactContent, pageHeading: "Contact"});
+});
 
+app.get("/compose", (req,res) => {
+  res.render("compose");
+});
 
-
-
-
-
+app.post("/compose", (req,res) => {
+  var myPost = {
+    title: req.body.postTitle, 
+    content : req.body.postBody
+  };
+  posts.push(myPost);
+  res.redirect("/");
+});
 
 
 
